@@ -1,0 +1,37 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: tourist_attraction
+  - action: utter_tourist_attraction
+  - intent: Charminar_Hyderabad
+  - action: utter_Charminar_Hyderabad
+  - intent: HussainSagar_Hyderabad
+  - action: utter_HussainSagar_Hyderabad
+  - intent: GolcondaFort-Hyderabad
+  - action: utter_GolcondaFort-Hyderabad
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: accomdations
+  - action: utter_accomdations
+#  - action: utter_tourism
+#  - action: utter_did_that_help
+#  - intent: affirm
+#  - action: utter_happy
+#
+#- story: sad path 2
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_did_that_help
+#  - intent: deny
+#  - action: utter_goodbye

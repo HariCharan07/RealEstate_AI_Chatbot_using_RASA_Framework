@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - Discounts_on_Hotel_bookings
+  - tourist_attraction
+  - accomdations
+  - connectivity
+  - Charminar_Hyderabad
+  - HussainSagar_Hyderabad
+  - GolcondaFort-Hyderabad
+responses:
+  utter_greet:
+  - text: "హాయ్ , T-tourism కు స్వాగతం, తెలంగాణా టూరిజంకు సంబంధించిన సందేహాలతో నేను మీకు సహాయం చేయగలను. దయచేసి మీ ప్రశ్నను టైప్ చేయండి లేదా దయచేసి క్రింది ఎంపికల నుండి ఎంచుకోండి"
+    buttons:
+      - title: "tourist_attraction"
+        payload: "/tourist_attraction"
+      - title: "accomdations"
+        payload: "/accomdations"
+      - title: "connectivity"
+        payload: "/connectivity"
+      - title: "Discounts_on_Hotel_bookings"
+        payload: "/Discounts_on_Hotel_bookings"
+  utter_tourist_attraction:
+  - text: "హైదరాబాద్ నగరం రాజధానిగా ఉన్న భారతదేశంలోని 29వ రాష్ట్రం తెలంగాణ. తెలంగాణలోని ప్రధాన పర్యాటక ఆకర్షణలు హైదరాబాద్, వరంగల్, కరీంనగర్ మరియు నిజామాబాద్, తెలంగాణలోని ఇతర ప్రధాన పర్యాటక ప్రదేశాలలో ఫలక్‌నుమా ప్యాలెస్, కుతుబ్ షాహీ సమాధులు మరియు ప్రసిద్ధ పురాతన దేవాలయాలు మరియు స్మారక చిహ్నాలు ఉన్నాయి. మీరు త్వరగా ఎంచుకోగల కొన్ని దిగువన ఉన్నాయి"
+    buttons:
+      - title: "Charminar_Hyderabad"
+        payload: "/charminar_hyderabad"
+      - title: "HussainSagar_Hyderabad"
+        payload: "/hussainsagar_hyderabad"
+      - title: "GolcondaFort-Hyderabad"
+        payload: "/golcondafort-hyderabad"
+  utter_Charminar_Hyderabad:
+  - text: "చార్మినార్ ఒక స్మారక చిహ్నం మరియు మసీదు, ఇది భారతదేశంలోని హైదరాబాద్ చరిత్రకు పర్యాయపదంగా ఉంది. గంభీరమైన నిర్మాణం 1591 CE లో పూర్తయింది మరియు ఇది హైదరాబాద్ యొక్క మైలురాయి భవనం మాత్రమే కాకుండా భారతదేశంలోని ప్రసిద్ధ స్మారక చిహ్నం.
+           సందర్శించడానికి ఉత్తమ సమయం: సోమవారం నుండి ఆదివారం వరకు 9:30AM–5:30PM
+           దీని నుండి దిశలను పొందండి: https://goo.gl/maps/o2nVHQrCGnn
+           మరింత సమాచారం కోసం దయచేసి సందర్శించండి: https://en.wikipedia.org/wiki/Charminar"
+  utter_HussainSagar_Hyderabad:
+  - text: "హుస్సేన్ సాగర్ సరస్సును ఇబ్రహీం కులీ కుతుబ్ షా హయాంలో హుస్సేన్ షా వలీ 1562 A.D లో త్రవ్వించారు, దీని విహార ప్రదేశం ఇప్పుడు రద్దీగా ఉండే మార్గం. హుస్సేన్ సాగర్ సరస్సులో బోటింగ్ మరియు వాటర్ స్పోర్ట్స్ నిత్యం జరిగేవి. ఇది హైదరాబాద్‌లోని పెద్ద మానవ నిర్మిత సరస్సు మరియు మూసీ నది యొక్క చిన్న ఉపనదిపై నిర్మించబడింది. హుస్సేన్ సాగర్ సరస్సు మధ్యలో 16 మీటర్ల పొడవు మరియు 350 టన్నుల (సుమారుగా) బరువు కలిగిన ఏకశిలా బుద్ధ విగ్రహం ఏర్పాటు చేయబడింది, ఇది సూర్యాస్తమయం నుండి అద్భుతంగా సిల్హౌట్ చేయబడింది. హుస్సేన్ సాగర్ బోటింగ్ గురించి మరింత తెలుసుకోవడానికి దయచేసి సందర్శించండి: https://tourism.telangana.gov.in/nature-discovery/HussainSagarLake"
+  utter_GolcondaFort-Hyderabad:
+  - text: "గోల్కొండ ఫోర్ట్ హైదరాబాద్ అద్భుతమైన ఇంజనీరింగ్ మరియు మాయా ఆర్కిటెక్చర్‌కు అత్యుత్తమ ఉదాహరణ. నగరం నుండి 11 కిలోమీటర్ల దూరంలో ఉన్న ఇది హైదరాబాద్ సందర్శనా స్థలాలన్నింటిలో అత్యంత ప్రసిద్ధి చెందింది. దాదాపు 12వ శతాబ్దంలో కాకతీయ రాజులచే స్థాపించబడిన ఈ భారీ గోల్కొండ కోటను ఎనిమిది ద్వారాలు మరియు 87 బురుజులతో తరువాత కుతుబ్ షాహీ రాజులు నిర్మించారు.
+             సందర్శించడానికి ఉత్తమ సమయం: సోమవారం నుండి ఆదివారం వరకు 9:00AM–5:30PM
+            దీని నుండి దిశలను పొందండి: https://bit.ly/2rKr7nj
+            మరింత సమాచారం కోసం దయచేసి సందర్శించండి: https://tourism.telangana.gov.in/forts/GolkondaFort
+            వికీపీడియా: https://en.wikipedia.org/wiki/Golkonda"
+  utter_accomdations:
+  - text: "హైదరాబాద్, నిజాం నగరం ఒక చిన్న భారతదేశం మీకు స్వాగతం! మీ ప్రయాణంలో భాగంగా, హరిత హోటల్స్‌ను సందర్శించండి మరియు బస చేయండి, ఇది అద్భుతమైనది!
+           వివిధ హోటళ్ల గురించి మరింత సమాచారం కోసం: https://tourism.telangana.gov.in/blogpage?id=8
+          గదులను బుక్ చేసుకోవడానికి లాగిన్ చేయండి: http://tstdc.in/tgtdc/login/OnlineLogin.jsp"
+
+  utter_connectivity:
+  - text: "తెలంగాణ రాష్ట్రం అంతటా నడిచే రైలు పట్టాల ద్వారా బాగా అనుసంధానించబడిన జిల్లాలను కలిగి ఉంది. తెలంగాణ మ్యాప్ రాష్ట్రంలోని వివిధ ప్రాంతాలను కలిపే వివిధ స్టేషన్లు మరియు రైల్వే మార్గాలను చూపుతుంది. ఈ మార్గాలు ప్రయాణికుడిని అతని గమ్యస్థానానికి నడిపించడంలో సహాయపడతాయి. రాష్ట్రం అంతర్ రాష్ట్రంగా మాత్రమే కాకుండా ఇంట్రా స్టేట్‌గా కూడా అనుసంధానించబడి ఉంది. ఇప్పటికే దేశంలోని ఇతర రాష్ట్రాలతో బాగా అనుసంధానించబడిన ఆంధ్రప్రదేశ్ నుండి రాష్ట్రం విడిపోయినందున, తెలంగాణ దాని నుండి ప్రయోజనం పొందుతుంది. రాష్ట్రంలో నివసించే ప్రజలు ఇతర రాష్ట్రాలకు మెరుగైన రైలు కనెక్టివిటీని కూడా ఆస్వాదించవచ్చు, అంటే వారు ఎలాంటి ఇబ్బంది లేకుండా ఇతర రాష్ట్రాలను సందర్శించవచ్చు.
+           టిక్కెట్‌లను బుక్ చేసుకోవడానికి దయచేసి క్లిక్ చేయండి: https://www.irctc.co.in/nget/train-search"
+
+  utter_Discounts_on_Hotel_bookings:
+  - text: "హోటల్‌లపై ఆఫర్‌ల కోసం దయచేసి క్లిక్ చేయండి"
+
+  utter_iamabot:
+  - text: "నేను రాసా ద్వారా ఆధారితమైన బోట్‌ని."
+actions:
+  - utter_greet
+  - utter_tourism
+  - utter_tourist_attraction
+  - utter_accomdations
+  - utter_connectivity
+  - utter_Discounts_on_Hotel_bookings
+  - utter_Charminar_Hyderabad
+  - utter_HussainSagar_Hyderabad
+  - utter_GolcondaFort-Hyderabad
+  -  utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
